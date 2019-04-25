@@ -1,0 +1,6 @@
+{
+    "healthCheck": "health",
+    "healthCheckType": "http",
+    "watch": "api/**/*.js",
+    "watchRestartService": true
+}

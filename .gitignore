@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+
+# Dependency directory
+node_modules
+*/node_modules
+
+.DS_Store
+.monitor
+
+##LSQ-local
+.pins.json
+.config.json
+.consul
+.vscode
+.vscode/*
+
