@@ -18,7 +18,7 @@ APIs
 
 
 ## Notes
-You'll need `proxy-service` to redirect the API requests to this or other services in your stack.
+You'll need [**`proxy-service`**](https://github.com/mutable/node-proxy) to redirect the API requests to this or other services in your stack.
 
 External Links
 ---
