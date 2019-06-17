@@ -3,7 +3,6 @@ const Pack = require('../package.json');
 module.exports = {
   documentationPath: '/',
   auth: false,
-  jsonEditor: true,
   schemes: ['http', 'https'],
   securityDefinitions: {
     Bearer: {
