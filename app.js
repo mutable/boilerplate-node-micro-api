@@ -33,6 +33,4 @@ const swaggerOptions = require('./utils/swaggerOptions.js');
   } catch (err) {
     console.error(err);
   }
-
-
 })();
