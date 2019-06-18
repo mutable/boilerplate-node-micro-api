@@ -1,7 +1,13 @@
-const Api = {};
-module.exports = Api;
 
-Api.get = (req) => {
+/**
+* DEMO FILE
+*
+* Dummy API handler
+**/
+const API = {};
+module.exports = API;
+
+API.get = (req) => {
   const { offset, limit } = req.query;  
   
   console.log(limit)

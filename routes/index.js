@@ -1,3 +1,7 @@
+/**
+* Combine all routes into one array
+*/
+
 const health = require('./health');
 const api = require('./api');
 

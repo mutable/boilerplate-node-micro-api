@@ -1,10 +1,9 @@
-const HapiSwagger = require('hapi-swagger');
 const Hapi = require('@hapi/hapi');
+const HapiSwagger = require('hapi-swagger');
 const Inert = require('@hapi/inert');
 const Vision = require('@hapi/vision');
 
 const routes = require('./routes');
-
 const swaggerOptions = require('./utils/swaggerOptions.js');
 
 (async () => {
@@ -34,3 +33,8 @@ const swaggerOptions = require('./utils/swaggerOptions.js');
     console.error(err);
   }
 })();
+
+process.on('unhandledRejection', (err) => {
+  console.error(err);
+  process.exit(1);
+});
