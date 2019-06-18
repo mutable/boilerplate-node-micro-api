@@ -6,6 +6,7 @@ const Api = require('../api/index');
 const routes = [];
 module.exports = routes;
 
+// Example validation
 const LIST_DEFAULT = {
   offset: Joi.number().optional().default(0).description('Set db query OFFSET'),
   limit: Joi.number().optional().default(10).description('Set db query LIMIT'),
@@ -13,10 +14,11 @@ const LIST_DEFAULT = {
 
 const FAIL_ACTION = async (request, h, err) => Boom.badRequest(err.details[0].message);
 
+// Example request
 routes.push({
   method: 'GET',
   path: '/get',    
-  config: {
+  options: {
     auth: false,
     description: 'Dummy get request',
     tags: ['api'],
