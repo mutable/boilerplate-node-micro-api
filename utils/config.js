@@ -13,4 +13,6 @@ let config;
 Meta.config()
 .then((_config) => {
   config = _config
-});
+  return _config;
+})
+.catch((e) => {throw e});
