@@ -12,7 +12,7 @@ const ENV = process.env.NODE_ENV === 'production' ? 'prod' : 'dev';
 const Config = {};
 module.exports = Config;
 
-let config;
+let config = {};
 
 //** Meta.config() returns configurations set in the Mutable app's Configurations tab **//
 
