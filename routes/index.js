@@ -1,11 +1,13 @@
+
 /**
 * Combine all routes into one array
-*/
+**/
 
 const health = require('./health');
 const api = require('./api');
 
 const _routes = [health, api];
+
 const routes = [];
 
 _routes.forEach((_route) => {

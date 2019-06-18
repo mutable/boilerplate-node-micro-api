@@ -1,3 +1,4 @@
+
 /**
 * DEMO FILE
 * 
@@ -9,7 +10,6 @@ const Meta = require('@mutable/meta');
 const ENV = process.env.NODE_ENV === 'production' ? 'prod' : 'dev';
 
 const Config = {};
-
 module.exports = Config;
 
 let config;
