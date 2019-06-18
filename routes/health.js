@@ -10,6 +10,6 @@ routes.push({
     auth: false,
     description: 'Health Check',
     tags: ['api', 'mutable', 'Health'],
-    handler: () => tooBusy.lag().toString(),
+    handler: () => tooBusy.lag().toString()
   },
 });

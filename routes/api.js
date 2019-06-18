@@ -22,11 +22,11 @@ routes.push({
     auth: false,
     description: 'Dummy get request',
     tags: ['api'],
-    handler: Api.get,  
+    handler: Api.get,
     validate: {
-      query: Object.assign({}, LIST_DEFAULT, {}),
+      query: Object.assign({}, LIST_DEFAULT)
     },
-    response: {      
+    response: {
       failAction: FAIL_ACTION
     },
   },
