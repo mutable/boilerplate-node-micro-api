@@ -22,8 +22,8 @@ swaggerOptions = {
   info: {
     title: PACKAGE.name,
     description: PACKAGE.description,
-    version: PACKAGE.version,
-  },
+    version: PACKAGE.version
+  }
 };
 
 module.exports = swaggerOptions;
