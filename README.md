@@ -14,7 +14,7 @@ Run the service through the Mutable app or via Terminal.
 APIs
 ---
 
-### GET: /api/v1/get
+### GET: /api/get
 
 
 ## Notes
