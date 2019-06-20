@@ -7,7 +7,7 @@
 
 const PACKAGE = require('../package.json');
 
-swaggerOptions = {
+const swaggerOptions = {
   documentationPath: '/',
   auth: false,
   schemes: ['http', 'https'],
