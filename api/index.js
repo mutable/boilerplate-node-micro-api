@@ -5,10 +5,10 @@
 * Dummy API handler
 **/
 
-const API = {};
-module.exports = API;
+const DummyApi = {};
+module.exports = DummyApi;
 
-API.get = (req) => {
+DummyApi.get = (req) => {
   const { offset, limit } = req.query;  
   
   console.log(limit)

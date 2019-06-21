@@ -5,10 +5,10 @@
 
 const HEALTH_API = require('../api/health');
 
-const routes = [];
-module.exports = routes;
+const Routes = [];
+module.exports = Routes;
 
-routes.push({
+Routes.push({
   method: 'GET',
   path: '/health',
   options :{
