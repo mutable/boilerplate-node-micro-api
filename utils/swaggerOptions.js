@@ -1,6 +1,13 @@
-const Pack = require('../package.json');
 
-module.exports = {
+/**
+* DEMO FILE
+*
+* Swagger options configuration
+**/
+
+const Package = require('../package.json');
+
+const SwaggerOptions = {
   documentationPath: '/',
   auth: false,
   schemes: ['http', 'https'],
@@ -13,8 +20,10 @@ module.exports = {
   },
   security: [{ Bearer: [] }],
   info: {
-    title: Pack.name,
-    description: Pack.description,
-    version: Pack.version,
-  },
+    title: Package.name,
+    description: Package.description,
+    version: Package.version
+  }
 };
+
+module.exports = SwaggerOptions;

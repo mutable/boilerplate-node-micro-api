@@ -1,15 +1,19 @@
-const tooBusy = require('toobusy-js');
 
-const routes = [];
-module.exports = routes;
+/**
+* Health status check endpoint
+**/
 
-routes.push({
+const HEALTH_API = require('../api/health');
+
+const Routes = [];
+module.exports = Routes;
+
+Routes.push({
   method: 'GET',
   path: '/health',
-  config: {
-    auth: false,
+  options :{
     description: 'Health Check',
-    tags: ['api', 'mutable', 'Health'],
-    handler: () => tooBusy.lag().toString(),
-  },
+    tags: ['api','mutable','Health'],
+    handler: HEALTH_API.healthCheck
+    }
 });

@@ -1,31 +1,34 @@
-const Joi = require('joi');
-const Boom = require('boom');
 
-const Api = require('../api/index');
+/**
+* DEMO FILE
+*
+* Dummy API route
+**/
+
+const Boom = require('@hapi/boom');
+
+const DummyApi = require('../api/index');
+const JoiModels = require('../utils/joi-models');
 
 const routes = [];
 module.exports = routes;
 
-const LIST_DEFAULT = {
-  offset: Joi.number().optional().default(0).description('Set db query OFFSET'),
-  limit: Joi.number().optional().default(10).description('Set db query LIMIT'),
-}
-
 const FAIL_ACTION = async (request, h, err) => Boom.badRequest(err.details[0].message);
 
+// Example request
 routes.push({
   method: 'GET',
   path: '/get',    
-  config: {
+  options: {
     auth: false,
     description: 'Dummy get request',
     tags: ['api'],
-    handler: Api.get,  
+    handler: DummyApi.get,
     validate: {
-      query: Object.assign({}, LIST_DEFAULT, {}),
+      query: Object.assign({}, JoiModels.LIST_DEFAULT)
     },
-    response: {      
+    response: {
       failAction: FAIL_ACTION
-    },
-  },
+    }
+  }
 });
