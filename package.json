@@ -1,24 +1,34 @@
 {
   "name": "service-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Hapi service boilerplate",
   "main": "app.js",
   "dependencies": {
+    "@hapi/boom": "^9.0.0",
+    "@hapi/catbox-redis": "^5.0.5",
+    "@hapi/cookie": "^11.0.0",
+    "@hapi/hapi": "^19.1.0",
+    "@hapi/inert": "^6.0.1",
+    "@hapi/joi": "^17.1.0",
+    "@hapi/vision": "^6.0.0",
     "@mutable/meta": "^1.3.0",
-    "@hapi/hapi": "^18.3.1",
-    "@hapi/joi": "^15.0.3",
-    "@hapi/boom": "^7.4.2",
-    "@hapi/vision": "^5.5.2",
-    "@hapi/inert": "^5.2.0",
-    "hapi-swagger": "^10.0.1",
+    "hapi-auth-bearer-token": "^6.1.4",
+    "hapi-swagger": "^12.1.0",
+    "pg-promise": "^10.4.3",
+    "promise": "^8.0.3",
+    "redis": "^3.0.2",
     "toobusy-js": "^0.5.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1"
+  },
   "scripts": {
     "start": "node app.js"
   },
   "engines": {
-    "node": ">=11.4"
+    "node": ">=12.15"
   },
   "keywords": [
     "node",
